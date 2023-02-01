@@ -1,0 +1,10 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: hello-world-crt
+spec:
+  secretName: hello-world-tls
+  dnsNames:
+  - hw.workshop.dev.example.com
+  issuerRef:
+    name: my-issuer

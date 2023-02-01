@@ -1,0 +1,10 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: hello-world-crt
+spec:
+  secretName: hello-world-tls
+  dnsNames:
+  - hw.foobar.com
+  issuerRef:
+    name: contour-ca-issuer

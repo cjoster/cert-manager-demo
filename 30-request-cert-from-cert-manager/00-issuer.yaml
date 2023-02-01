@@ -1,0 +1,8 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: my-issuer
+  namespace: hello-world
+spec:
+  ca:
+    secretName: my-ca

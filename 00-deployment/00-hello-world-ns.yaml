@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2023-02-01T20:06:06Z"
+  labels:
+    kubernetes.io/metadata.name: hello-world
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:kubernetes.io/metadata.name: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2023-02-01T20:06:06Z"
+  name: hello-world
+  resourceVersion: "48686513"
+  uid: 4637f5ea-45ba-4612-9dad-4c1eb88bd566
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
